@@ -22,11 +22,12 @@ jobs:
       - name: Assemble website
         run: |
           mkdir -p _site
-          cp *.html styles.css app.js data.json fonts.css favicon.svg _site/
+          cp *.html styles.css radio-styles.css app.js radio.js navigation.js data.json fonts.css favicon.svg _site/
           for number in 01 02 03; do
             curl -L --fail --retry 3 "https://github.com/Colin-RU/ranger-archive/releases/download/v1.0/assets-${number}.zip" -o /tmp/ranger-assets.zip
             unzip -q /tmp/ranger-assets.zip -d _site
           done
+          cp *.mp3 _site/media/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:
