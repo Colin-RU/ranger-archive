@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Атлас · Рейнджеры армии США · 1942–1945</title>
+<meta content="Иллюстрированный исторический архив рейнджеров Второй мировой войны. Батальоны, звания, форма, вооружение и техника — 124 листа с архивными фотографиями." name="description"/>
+<meta content="#141713" name="theme-color"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="fonts.css" rel="stylesheet"/><link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="inner-page" data-page="atlas">
+<a class="skip" href="#main">К содержанию</a>
+<header class="header">
+<a aria-label="Рейнджеры — на главную" class="brand" href="index.html"><span class="brand-mark">R</span><span>RANGER<span class="brand-sub">HISTORICAL ARCHIVE</span></span></a>
+<nav aria-label="Основная навигация"><a href="index.html">Главная</a><a href="history.html">История</a><a href="ranks.html">Звания</a><a href="collection.html">Коллекция</a><a aria-current="page" href="atlas.html">Атлас</a></nav>
+<button aria-pressed="false" class="radio-button" id="radioToggle"><span class="radio-bars"><i></i><i></i><i></i><i></i></span><span id="radioLabel">Музыка эпохи</span></button>
+<button aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" id="menuToggle">☰</button>
+</header>
+<main id="main"><section class="section atlas-section" id="atlas"><div class="section-heading"><div><p class="eyebrow">04 / ИЛЛЮСТРИРОВАННОЕ ИЗДАНИЕ</p><h2>Иллюстрированный атлас</h2></div><a class="button brass" href="https://github.com/Colin-RU/ranger-archive/releases/download/v1.0/US_Rangers_WWII_Atlas_RU.pdf" rel="noopener" target="_blank">Скачать книгу · PDF <span>↓</span></a></div><p class="page-intro">124 листа с архивными фотографиями и русскими пояснениями. Выберите раздел или найдите нужный образец.</p><details class="atlas-intro"><summary>О книге и скачивании отдельных разделов</summary><div class="atlas-feature"><img alt="Обложка иллюстрированного атласа рейнджеров" loading="lazy" src="atlas/001.webp"/><div><span class="atlas-label">ИСТОРИЧЕСКИЙ СПРАВОЧНИК</span><h3>124 листа.<br/>Шесть разделов.<br/>Одна коллекция.</h3><p>Оригинальные фотографии военных лет, каталожные изображения и пояснения на русском языке. Листы открываются в полном размере; книгу и отдельные разделы можно сохранить.</p><a class="text-link" href="https://github.com/Colin-RU/ranger-archive/releases/download/v1.0/US_Rangers_WWII_Illustrated_Guides.zip">Все методички · ZIP <span>↓</span></a><button class="text-link download-button" id="downloadsOpen">Скачать отдельные разделы <span>↗</span></button></div></div></details><div class="atlas-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input aria-label="Поиск по атласу" id="atlasSearch" placeholder="Поиск по листам…" type="search"/></label><label class="select-label">Раздел <select id="atlasSection"><option value="all">Все разделы</option></select></label><span aria-live="polite" id="atlasCount"></span></div><div class="atlas-grid" id="atlasGrid"></div><div class="pager" id="atlasPager"></div></section></main>
+<footer><a class="brand" href="index.html"><span class="brand-mark">R</span><span>RANGER<span class="brand-sub">1942 — 1945</span></span></a><p>Рейнджеры армии США.<br/>Иллюстрированный исторический архив.</p><button class="text-link footer-sources" id="sourcesOpen">Источники ↗</button><a class="back-top" href="#main">Наверх ↑</a></footer>
+<audio id="radioAudio" loop="" preload="none" src="media/charleston-1925.mp3"></audio>
+<div class="radio-panel" hidden="" id="radioPanel"><div class="radio-cover">♫</div><div><strong>Charleston</strong><span>Golden Gate Orchestra · 1925</span><small>Джаз довоенной эпохи · Edison 51542-R</small></div><label>Громкость<input aria-label="Громкость музыки" id="radioVolume" max="1" min="0" step="0.05" type="range" value="0.35"/></label><button aria-label="Выключить музыку" id="radioClose">×</button></div>
+<dialog class="detail-dialog" id="detailDialog"><button aria-label="Закрыть" class="dialog-close">×</button><div id="detailContent"></div></dialog>
+<dialog class="atlas-dialog" id="atlasDialog"><div class="atlas-dialog-bar"><span id="sheetTitle"></span><div><button aria-label="Предыдущий лист" id="sheetPrev">←</button><button aria-label="Следующий лист" id="sheetNext">→</button><a download="" id="sheetDownload">Сохранить ↓</a><button aria-label="Закрыть" class="dialog-close">×</button></div></div><img alt="" id="sheetImage"/></dialog>
+<dialog class="cinema-dialog" id="cinemaDialog"><button aria-label="Закрыть" class="dialog-close">×</button><p class="eyebrow">OFFICE OF WAR INFORMATION · 1944</p><h2>Хроника Нормандии</h2><video controls="" id="cinemaVideo" playsinline="" poster="images/hero-poster.webp" preload="none"><source src="https://upload.wikimedia.org/wikipedia/commons/1/12/D-Day_1944_Office_of_War_Information.webm" type="video/webm"/></video><p>«D-Day», фильм Office of War Information. В монтаж включены кадры подготовки, использованные для изображения высадки. Это хроника союзнической операции, а не съёмка только рейнджерских частей.</p><a class="text-link" href="https://commons.wikimedia.org/wiki/File:D-Day_1944_Office_of_War_Information.webm" rel="noopener" target="_blank">Сведения об архивном фильме ↗</a></dialog>
+<p class="status-toast" hidden="" id="status" role="status"></p>
+<script defer="" src="app.js"></script>
+</body></html>
