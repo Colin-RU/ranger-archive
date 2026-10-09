@@ -1,0 +1,11 @@
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.radio-panel{display:grid;grid-template-columns:44px minmax(180px,1fr) 30px;gap:9px 16px;width:540px;padding:17px 19px;align-items:center}
+.radio-panel .radio-cover{grid-column:1;grid-row:1/5;align-self:start;margin-top:8px}
+.radio-info{grid-column:2;grid-row:1}.radio-info small{letter-spacing:1px;font-size:7px;color:var(--brass);margin:0 0 4px}.radio-info strong{font-size:13px;line-height:1.5}.radio-info span{font-size:9px;color:var(--muted)}
+.radio-close{grid-column:3;grid-row:1;align-self:start}.radio-panel .radio-track-select{grid-column:2/4;margin:0;width:100%}
+.radio-track-select select{width:100%;font-size:10px;color:var(--ink);background:#172014;border:1px solid #4c5940;padding:8px 10px}.radio-track-select option{background:#172014}
+.radio-controls{grid-column:2/4;display:flex;gap:8px;align-items:center}.radio-controls button{display:flex;align-items:center;justify-content:center;width:30px;height:28px;border:1px solid #4c5940;font-size:12px;color:var(--brass)}.radio-controls #radioPlayPause{background:var(--brass);color:#172014}
+.radio-panel .radio-volume{display:flex;align-items:center;gap:7px;margin:0 0 0 8px;font-size:7px}.radio-volume input{margin:0;width:70px}.radio-period{font-size:6px;letter-spacing:.7px;color:var(--muted);margin-left:auto}
+.radio-progress{grid-column:2/4;display:flex;gap:10px;align-items:center}.radio-progress span{font-size:8px;color:var(--muted);font-variant-numeric:tabular-nums}.radio-panel .radio-progress input{width:auto;flex:1;margin:0;height:12px}
+main[aria-busy=true]{cursor:progress}main:focus{outline:none}
+@media(max-width:760px){.radio-panel{grid-template-columns:32px minmax(130px,1fr) 25px;left:12px;right:12px;width:auto;max-width:none;padding:13px;gap:8px 11px}.radio-panel .radio-cover{width:32px;height:32px;line-height:32px}.radio-info strong{font-size:12px}.radio-info span{font-size:8px}.radio-track-select select{font-size:9px;padding:7px}.radio-controls{gap:6px}.radio-controls button{width:27px;height:27px}.radio-panel .radio-volume{margin-left:3px}.radio-volume input{width:55px}.radio-period{display:none}}
